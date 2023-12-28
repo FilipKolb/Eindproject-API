@@ -13,4 +13,4 @@ COPY ./myproject /code
 
 RUN mkdir -p /code/sqlitedb
 
-CMD ["/usr/local/bin/uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python -m uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -1,6 +1,6 @@
 version: "3.9"
 services:
- pokemom-api:
+ pokemom-api-service:
   image: filipkolb/pokemon-api
   ports:
     - "8000:8000"
@@ -8,4 +8,4 @@ services:
     - sqlite_pokemon:/code/sqlitedb
 
 volumes:
-  sqlite_Pokemon:
+  sqlite_pokemon:
